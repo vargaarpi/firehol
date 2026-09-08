@@ -1,0 +1,32 @@
+name: Generate FireHOL rsc
+
+on:
+  schedule:
+    - cron: '0 2 * * *' # Minden nap hajnali 2:00-kor fut (UTC)
+  workflow_dispatch: # Lehetővé teszi a manuális indítást gombnyomással
+
+jobs:
+  build-and-commit:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write # Engedély a fájl felülírására a tárolóban
+    
+    steps:
+      - name: Tároló letöltése (Checkout)
+        uses: actions/checkout@v4
+
+      - name: Nyers lista letöltése és konvertálása .rsc formátumra
+        run: |
+          curl -s https://raw.githubusercontent.com/firehol/blocklist-ipsets/master/firehol_level1.netset | \
+          grep -v "^#" | grep -v "^$" | \
+          awk '{print "/ip firewall address-list add list=firehol_level1 address=" $1}' > firehol.rsc
+
+      - name: Változások mentése (Commit & Push)
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add firehol.rsc
+          
+          # Csak akkor ment, ha a fájl tartalma megváltozott tegnap óta
+          git diff --quiet && git diff --staged --quiet || git commit -m "Automatikus FireHOL lista frissítés"
+          git push
