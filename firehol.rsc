@@ -217,6 +217,7 @@
 /ip firewall address-list add list=firehol_level1 address=45.192.211.0/24
 /ip firewall address-list add list=firehol_level1 address=45.194.92.0/24
 /ip firewall address-list add list=firehol_level1 address=45.197.176.0/22
+/ip firewall address-list add list=firehol_level1 address=45.198.224.0/24
 /ip firewall address-list add list=firehol_level1 address=45.221.116.0/22
 /ip firewall address-list add list=firehol_level1 address=45.230.66.0/24
 /ip firewall address-list add list=firehol_level1 address=45.248.88.0/22
@@ -277,16 +278,16 @@
 /ip firewall address-list add list=firehol_level1 address=64.205.172.0/22
 /ip firewall address-list add list=firehol_level1 address=64.205.188.0/22
 /ip firewall address-list add list=firehol_level1 address=64.250.144.0/20
+/ip firewall address-list add list=firehol_level1 address=65.49.1.0/24
 /ip firewall address-list add list=firehol_level1 address=65.166.249.0/24
 /ip firewall address-list add list=firehol_level1 address=65.205.64.0/22
 /ip firewall address-list add list=firehol_level1 address=65.216.208.0/21
 /ip firewall address-list add list=firehol_level1 address=66.6.59.0/24
-/ip firewall address-list add list=firehol_level1 address=66.132.159.0/24
 /ip firewall address-list add list=firehol_level1 address=66.132.172.0/24
-/ip firewall address-list add list=firehol_level1 address=66.132.224.0/24
+/ip firewall address-list add list=firehol_level1 address=66.132.186.0/24
+/ip firewall address-list add list=firehol_level1 address=66.132.195.0/24
 /ip firewall address-list add list=firehol_level1 address=66.198.225.0/24
 /ip firewall address-list add list=firehol_level1 address=67.219.208.0/20
-/ip firewall address-list add list=firehol_level1 address=69.5.169.0/24
 /ip firewall address-list add list=firehol_level1 address=69.33.250.0/23
 /ip firewall address-list add list=firehol_level1 address=69.33.252.0/22
 /ip firewall address-list add list=firehol_level1 address=69.40.207.0/24
@@ -317,6 +318,7 @@
 /ip firewall address-list add list=firehol_level1 address=78.40.143.0/24
 /ip firewall address-list add list=firehol_level1 address=78.108.119.0/24
 /ip firewall address-list add list=firehol_level1 address=78.153.140.0/24
+/ip firewall address-list add list=firehol_level1 address=79.124.58.0/24
 /ip firewall address-list add list=firehol_level1 address=79.124.62.0/24
 /ip firewall address-list add list=firehol_level1 address=80.94.92.0/22
 /ip firewall address-list add list=firehol_level1 address=80.97.47.0/24
@@ -419,7 +421,6 @@
 /ip firewall address-list add list=firehol_level1 address=91.92.47.0/24
 /ip firewall address-list add list=firehol_level1 address=91.92.240.0/22
 /ip firewall address-list add list=firehol_level1 address=91.188.254.0/24
-/ip firewall address-list add list=firehol_level1 address=91.196.152.0/24
 /ip firewall address-list add list=firehol_level1 address=91.200.133.0/24
 /ip firewall address-list add list=firehol_level1 address=91.200.164.0/22
 /ip firewall address-list add list=firehol_level1 address=91.202.233.0/24
@@ -1585,7 +1586,6 @@
 /ip firewall address-list add list=firehol_level1 address=147.90.214.0/24
 /ip firewall address-list add list=firehol_level1 address=147.90.219.0/24
 /ip firewall address-list add list=firehol_level1 address=147.119.0.0/16
-/ip firewall address-list add list=firehol_level1 address=147.185.132.0/23
 /ip firewall address-list add list=firehol_level1 address=148.148.0.0/16
 /ip firewall address-list add list=firehol_level1 address=148.178.0.0/16
 /ip firewall address-list add list=firehol_level1 address=148.185.0.0/16
@@ -1737,6 +1737,7 @@
 /ip firewall address-list add list=firehol_level1 address=166.121.0.0/16
 /ip firewall address-list add list=firehol_level1 address=167.31.0.0/16
 /ip firewall address-list add list=firehol_level1 address=167.74.0.0/18
+/ip firewall address-list add list=firehol_level1 address=167.94.145.0/24
 /ip firewall address-list add list=firehol_level1 address=167.148.201.0/24
 /ip firewall address-list add list=firehol_level1 address=167.158.0.0/16
 /ip firewall address-list add list=firehol_level1 address=167.175.0.0/16
@@ -1906,6 +1907,7 @@
 /ip firewall address-list add list=firehol_level1 address=185.241.208.0/24
 /ip firewall address-list add list=firehol_level1 address=185.241.211.0/24
 /ip firewall address-list add list=firehol_level1 address=185.242.3.0/24
+/ip firewall address-list add list=firehol_level1 address=185.242.226.0/24
 /ip firewall address-list add list=firehol_level1 address=185.243.96.0/24
 /ip firewall address-list add list=firehol_level1 address=185.244.249.0/24
 /ip firewall address-list add list=firehol_level1 address=185.245.62.0/23
@@ -2179,7 +2181,6 @@
 /ip firewall address-list add list=firehol_level1 address=193.32.66.0/23
 /ip firewall address-list add list=firehol_level1 address=193.32.162.0/24
 /ip firewall address-list add list=firehol_level1 address=193.46.255.0/24
-/ip firewall address-list add list=firehol_level1 address=193.47.62.0/24
 /ip firewall address-list add list=firehol_level1 address=193.139.0.0/16
 /ip firewall address-list add list=firehol_level1 address=193.142.146.0/23
 /ip firewall address-list add list=firehol_level1 address=193.143.1.0/24
@@ -2208,6 +2209,7 @@
 /ip firewall address-list add list=firehol_level1 address=194.102.227.0/24
 /ip firewall address-list add list=firehol_level1 address=194.116.236.0/24
 /ip firewall address-list add list=firehol_level1 address=194.147.40.0/22
+/ip firewall address-list add list=firehol_level1 address=194.180.49.0/24
 /ip firewall address-list add list=firehol_level1 address=194.180.64.0/20
 /ip firewall address-list add list=firehol_level1 address=195.24.237.0/24
 /ip firewall address-list add list=firehol_level1 address=195.66.96.0/24
@@ -2221,7 +2223,6 @@
 /ip firewall address-list add list=firehol_level1 address=195.178.148.0/23
 /ip firewall address-list add list=firehol_level1 address=195.181.224.0/20
 /ip firewall address-list add list=firehol_level1 address=195.182.16.0/24
-/ip firewall address-list add list=firehol_level1 address=195.184.76.0/24
 /ip firewall address-list add list=firehol_level1 address=195.216.154.0/24
 /ip firewall address-list add list=firehol_level1 address=196.1.68.0/24
 /ip firewall address-list add list=firehol_level1 address=196.1.108.0/24
@@ -4624,7 +4625,6 @@
 /ip firewall address-list add list=firehol_level1 address=216.93.96.0/19
 /ip firewall address-list add list=firehol_level1 address=216.137.144.0/20
 /ip firewall address-list add list=firehol_level1 address=216.179.128.0/17
-/ip firewall address-list add list=firehol_level1 address=216.180.246.0/24
 /ip firewall address-list add list=firehol_level1 address=216.189.29.0/24
 /ip firewall address-list add list=firehol_level1 address=216.238.36.0/22
 /ip firewall address-list add list=firehol_level1 address=216.250.16.0/20
